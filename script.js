@@ -304,3 +304,18 @@ function countdown() {
 }
 
 countdown();
+
+function showQRBANK(){
+    const qrBank = document.getElementById('qr-bank')
+    // qrBank.classList.toggle('hidden')
+    // qrBank.style.display = "block";
+    openFullImg(qrBank.src)
+}
+
+function test() {
+    const cover = document.querySelector('#cover');
+    cover.style.marginTop = "-100rem";
+    cover.style.opacity = "0";
+    cover.style.transition = "all 1s .1s ease-in-out"
+    cover.classList.add('hidden');
+}test()

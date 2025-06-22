@@ -146,7 +146,7 @@
                 </div>
                 <div class="profile2 m-auto hidden sm:block">
                     <img src="img/profile/male3.jpg" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
-                    <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Phaolô Lã Tính</h2>
+                    <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Phaolô<br>Lã Tính</h2>
                     <p  class="text-center font-bold text-lg text-stone-800">Trưởng Nam</p>
                     <p class="text-center text-sm text-gray-800"><b>Ông Phaolô Lã Đức Tân</b>
                         <br>
@@ -308,7 +308,11 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.2304154498624!2d106.81966457102509!3d11.317862062866515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174bc0888fd6f01%3A0x2b3b0012a9035ca!2zQW4gQsOsbmgsIFBow7ogR2nDoW8sIELDrG5oIETGsMahbmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1750530321422!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-[120px] h-[300px] w-[100%]"></iframe>
                 </div>
                 <div class="btn-map m-auto">
-                    <a href="https://www.google.com/maps/place/An+B%C3%ACnh,+Ph%C3%BA+Gi%C3%A1o,+B%C3%ACnh+D%C6%B0%C6%A1ng,+Vi%E1%BB%87t+Nam/@11.3181882,106.8183771,17z/data=!3m1!4b1!4m6!3m5!1s0x3174bc0888fd6f01:0x2b3b0012a9035ca!8m2!3d11.3181882!4d106.8209574!16s%2Fg%2F11g61s_ymw?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"  class="btn-map text-white m-auto py-2 w-[200px] mt-[40px] flex items-center justify-center rounded-lg bg-[#ff7070] hover:bg-slate-600">Open Google Maps</a>
+                    <a href="https://www.google.com/maps/place/An+B%C3%ACnh,+Ph%C3%BA+Gi%C3%A1o,+B%C3%ACnh+D%C6%B0%C6%A1ng,+Vi%E1%BB%87t+Nam/@11.3181882,106.8183771,17z/data=!3m1!4b1!4m6!3m5!1s0x3174bc0888fd6f01:0x2b3b0012a9035ca!8m2!3d11.3181882!4d106.8209574!16s%2Fg%2F11g61s_ymw?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"  class="btn-map text-white m-auto py-2 w-[250px] mt-[40px] flex items-center justify-center rounded-lg bg-[#ff7070] hover:bg-slate-600">Xem trên Google map</a>
+                </div>
+                <div class="btn-map m-auto">
+                    <img id="qr-bank" src="img/element/qr-bank.jpg" style="display: none;">
+                    <button onclick="showQRBANK()" class="btn-map text-black m-auto py-2 w-[250px] mt-[30px] flex items-center justify-center rounded-lg bg-[#70FF95] hover:bg-slate-600">Mừng Cưới</button>
                 </div>
             </div>
 
@@ -316,9 +320,9 @@
     </section>
 
     <!-- GUESTBOOK -->
-    <section id="guestbook" class="m-auto h-[900px]">
+    <section id="guestbook" class="m-auto h-[1px] pt-5">
         <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower5 m-auto">
-        <h1 class="title5 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Sổ lưu bút</h1>
+        <h1 class="title5 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;"></h1>
 
         <div class="book m-auto bg-white w-[95%] sm:w-[75%] md:w-[70%] lg:w-[50%] xl:w-[47%] h-[58%] rounded-2xl border-[1.5px] border-red-400 overflow-auto">
             <!-- <div class="flex ml-[30px] mt-[40px]">
@@ -392,6 +396,17 @@
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]"> -->
         </div>
     </section>
+
+
+    <div class="pt-10" style="background-image: url(img/bg/wedding2.jpg); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: 0 -100px;">
+
+        <div class="kosong3"></div>
+
+        <div class="m-auto w-[95%] align-center bg-white/[.7] rounded-[5px] p-2 z-10 pt-4">
+            <p class="text-center text-gray-900 text-[17px] p-6 py-50">Từng vị khách có mặt trong buổi tiệc này đều là người thân người bạn rất trân quý và có ý nghĩa lớn lao đối với <span class="text-[30px]" style="font-family: 'Passions Conflict', cursive;">Tính & Lan</span> Cảm ơn mọi người vì đã trở thành một phần quan trọng trong ngày đặc biệt này.</p>
+            <h2 class="text-center text-[60px] text-slate-900" style="font-family: 'Passions Conflict', cursive;">Thank you</h2>
+        </div>
+    </div>
 
     <footer class="display: none;[#faebd7] w-full h-[200px] relative bottom-0">
         <div class="footer pt-[50px]">
