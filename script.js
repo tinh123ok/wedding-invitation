@@ -185,7 +185,12 @@ document.getElementById('open').addEventListener('click', () => {
     cover.style.transition = "all 1s .1s ease-in-out"
     setTimeout(() => {
         cover.classList.add('hidden');
-    }, 2000)
+    }, 1000)
+    const playerButton = document.querySelector('.player-button');
+    const audio = document.querySelector('audio')
+    if(audio.paused){
+     playerButton.click();
+    }
 })
 
 
