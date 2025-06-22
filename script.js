@@ -263,3 +263,39 @@ window.addEventListener('scroll', () => {
         document.querySelector('nav ul li a[href*= '+ current +']').classList.add('active');
     });
 });
+
+function countdown() {
+     // Thời gian đích
+    const endTime = new Date("2025-07-05 23:59:59").getTime();
+
+    const countDownDays = document.getElementById("count-down-days");
+    const countDownHours = document.getElementById("count-down-hours");
+    const countDownMinutes = document.getElementById("count-down-minutes");
+    const countDownSeconds = document.getElementById("count-down-seconds");
+
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = endTime - now;
+
+      if (distance <= 0) {
+        clearInterval(timer);
+        countDownDays.innerHTML = '0';
+        countDownHours.innerHTML = '0';
+        countDownMinutes.innerHTML = '0';
+        countDownSeconds.innerHTML = '0';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countDownDays.innerHTML = days;
+      countDownHours.innerHTML = hours;
+      countDownMinutes.innerHTML = minutes;
+      countDownSeconds.innerHTML = seconds;
+    }, 1000);
+}
+
+countdown();
